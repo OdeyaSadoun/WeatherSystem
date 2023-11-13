@@ -25,7 +25,7 @@ window.onload = async() => {
 
 
 const getLocFromName = async (_loc_name) => {
-  let url = `https://api.openweathermap.org/data/2.5/weather?q=${_loc_name}&units=1&lang=he&appid=${API_KEY}`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${_loc_name}&units=metric&lang=he&appid=${API_KEY}`;
 
   let resp = await fetch(url)
   let data = await resp.json()

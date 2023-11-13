@@ -11,23 +11,23 @@ class WeatherLocation {
   }
 
   render() {
-    let enNameLower = this.en_name.toLowerCase();
-    console.log("lower: ", enNameLower);
+    let en_name_lower = this.en_name.toLowerCase();
+
     let loc = document.createElement("div");
     loc.innerHTML = `
         <div class="card m-3">
-        <img src="../images/${enNameLower}.jpg"  class="card-img-top image_loc" alt="${this.en_name}">
+        <img src="../images/${en_name_lower}.jpg"  class="card-img-top image_loc" alt="${this.en_name}">
         <div class="card-body">
           <h5 class="card-title">${this.name}</h5>
           <p class="card-text">${this.description}</p>
           <div class="temps d-flex justify-content-between">
           <div class=""d-dlex flex-column>
           <p>טמפ'</p>
-          <p class="text-center">${this.temp}</p>
+          <p class="text-center ltr">${Math.round(this.temp)}&deg;C</p>
           </div>
           <div class=""d-dlex flex-column>
           <p>טמפ' מורגשת</p>
-            <p class="text-center"> ${this.feels_like}</p>
+            <p class="text-center ltr"> ${Math.round(this.feels_like)}&deg;C</p>
           </div>
           <div class=""d-dlex flex-column>
           <p>לחות</p>
