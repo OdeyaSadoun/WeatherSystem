@@ -43,15 +43,15 @@ class WeatherLocation {
             </div>
             <div class="temps d-flex justify-content-between">
                 <div class=""d-dlex flex-column>
-                    <p>טמפ'</p>
+                    <p class="fw-bold">טמפ'</p>
                     <p class="text-center ltr">${Math.round(this.temp)}&deg;C</p>
                 </div>
                 <div class=""d-dlex flex-column>
-                    <p>טמפ' מורגשת</p>
+                    <p class="fw-bold">טמפ' מורגשת</p>
                     <p class="text-center ltr"> ${Math.round(this.feels_like)}&deg;C</p>
                 </div>
                 <div class=""d-dlex flex-column>
-                    <p>לחות</p>
+                    <p class="fw-bold">לחות</p>
                     <p class="text-center">${this.humidity}%</p>
                 </div>
             </div>
