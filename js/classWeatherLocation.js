@@ -15,18 +15,18 @@ class WeatherLocation {
     console.log("lower: ", enNameLower);
     let loc = document.createElement("div");
     loc.innerHTML = `
-        <div class="card m-3" style="width: 25rem">
+        <div class="card m-3">
         <img src="../images/${enNameLower}.jpg"  class="card-img-top image_loc" alt="${this.en_name}">
         <div class="card-body">
           <h5 class="card-title">${this.name}</h5>
           <p class="card-text">${this.description}</p>
           <div class="temps d-flex justify-content-between">
           <div class=""d-dlex flex-column>
-          <p>טמפרטורה</p>
+          <p>טמפ'</p>
           <p class="text-center">${this.temp}</p>
           </div>
           <div class=""d-dlex flex-column>
-          <p>טמפרטורה מורגשת</p>
+          <p>טמפ' מורגשת</p>
             <p class="text-center"> ${this.feels_like}</p>
           </div>
           <div class=""d-dlex flex-column>
@@ -37,7 +37,7 @@ class WeatherLocation {
         </div>
       </div>
         `;
-    loc.className = "col-lg-3";
+    loc.className = "col-lg-3 col-md-6";
 
     document.querySelector(".row").append(loc);
   }
