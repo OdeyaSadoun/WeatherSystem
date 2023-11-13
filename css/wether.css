@@ -1,25 +1,30 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    direction: rtl;
+body {
+  direction: rtl;
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .bg_pic {
-    min-height: 250px;
-    background-position: center;
-    background-size: cover;
-  }
+  min-height: 250px;
+  background-position: center;
+  background-size: cover;
+}
 
-  .image_loc{
-   height: 12rem;
-   object-fit: cover;
-  }
+.image_loc {
+  height: 12rem;
+  object-fit: cover;
+}
+
+.icon_div {
+  font-size: 1.6em;
+  padding: 6px;
+}
